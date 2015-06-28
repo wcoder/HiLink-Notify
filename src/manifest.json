@@ -1,0 +1,32 @@
+{
+	"name" : "life:) Информатор",
+	"version" : "0.1",
+	"manifest_version": 2,
+	"description" : "Отображение на панели, информации о подключении.",
+	"icons": {
+		"16": "img/big_connected.png",
+		"48": "img/big_connected.png",
+		"128": "img/big_connected.png"
+	},
+
+	
+	"browser_action" : {
+		"default_title" : "life:) Информатор",
+		"default_icon" : "img/connected.png",
+		"default_popup" : "popup.html"
+	},
+	
+	
+	"background": {
+		"scripts": [
+			"js/jquery-1.8.1.min.js",
+			"js/life.libs.js",
+			"js/background.js"
+		]
+	},
+
+	"permissions": [
+		"http://192.168.1.1/",
+		"notifications"
+	]
+}
